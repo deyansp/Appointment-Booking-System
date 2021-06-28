@@ -1,0 +1,54 @@
+    .jumbotron-fluid {
+        background-image: url(../img/service-info-banner.jpg);
+        background-size: cover;
+        margin-bottom: 0;
+    }
+    
+    .jumbotron-top {
+        font-weight: 400;
+        margin: 4rem 0rem 1rem;
+        text-shadow: 1px 1px 4px black;
+        color: white;
+        font-family: 'Oswald', sans-serif;
+    }
+    
+    .jumbotron-bottom {
+        background-image: url(../img/jumbotron-bottom.jpg);
+        background-size: cover;
+    }
+    
+    .jumbotron-bottom h1 {
+        color: white;
+        font-family: 'Oswald', sans-serif;
+        text-shadow: 1px 1px 4px black;
+    }
+    
+    .jumbotron-bottom h4 {
+        margin-bottom: 1rem;
+        color: white;
+        text-shadow: 1px 1px 4px black;
+    }
+    
+    .card-img-top {
+        max-height: none;
+    }
+    
+    .service-left {
+        margin: auto;
+    }
+    
+    .service-right {
+        background-color: #ff7733;
+        color: white;
+        border-radius: 8px 20px 8px 20px;
+    }
+    
+    .content {
+        padding-bottom: 4rem;
+        animation-duration: 1s;
+        animation-name: slidein;
+    }
+    
+    .staff-section {
+        background-color: #f7f7f7;
+    }

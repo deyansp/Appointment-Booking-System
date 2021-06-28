@@ -1,0 +1,22 @@
+.jumbotron {
+    background-image: url(../img/appointments-banner.jpg);
+    background-size: cover;
+    margin-bottom: 0;
+    font-weight: 400;
+    margin: 3rem 0rem 1rem;
+    text-shadow: 1px 1px 4px black;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+}
+.forms {
+    margin-top: 4rem;
+    width: 50%;
+    padding-bottom: 4rem;
+    font-family: 'Lato', sans-serif;
+}
+
+@media (max-width: 768px) {
+    .forms {
+        width: 100%;
+    }
+}

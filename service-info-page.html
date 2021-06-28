@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Service Information | Discovery University</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/service-page.css">
+    <link rel="shortcut icon" href="img/fav-icon.ico" type="image/x-icon">
+</head>
+    
+<body>
+    <!--Navigation-->
+    <nav class="navbar navbar-expand-md navbar-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.php" alt="home">
+                <img src="img/logo.png" id ='logo'> Discovery University</a>
+
+            <button id="button" class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarOverlay">
+                <span class="navbar-toggler-icon ml-auto"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarOverlay">
+                <ul class="navbar-nav ml-auto">
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="jumbotron jumbotron-fluid">
+         <div class="container">
+            <h1 class="display-4 jumbotron-top">Student Advisory Service</h1>
+            <a class="btn btn-success" data-toggle="modal" href="#logInModal">Book Now</a>
+         </div>
+    </div>
+    
+    <div class="container-fluid">
+        <div class="container content">
+         <div class="row">
+            <div class ="col-12 content-heading">
+                <h2 class = "display-4 content-heading">About</h2>
+                <hr class="my-4">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 service-left">
+                <p>Our Student Advisors are on hand with information and advice about university life. We’re here to provide information and advice during your studies and also for when it’s time to think about moving on. We also offer advice on services outside of university such as registering with a GP. </p>
+            </div>
+            <div class="col-md-6 service-right">
+                <p>These are just some of the areas where we can help:</p>
+                <ul>
+                    <li>Finding accommodation</li>
+                    <li>Induction, matriculation and student cards </li>
+                    <li>Advice and support during your time at university</li>
+                    <li>Specialist support (e.g. careers advisors) </li>
+                    <li>Volunteering, the Third Sector and finding employment opportunities </li>
+                    <li>Workshops (e.g. CV writing, applying for jobs, interview skills)</li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </div>
+        
+    <div class="container-fluid staff-section">
+        <div class="container content">
+        <div class="row">
+            <div class ="col-12 content-heading">
+                <h2 class = "display-4 content-heading">Meet Our Friendly Staff</h2>
+                <hr class="my-4">
+            </div>
+            
+            <div class="row" id="services-cards">
+                <div class="col-md-4 text-center">
+                    <div class="card">
+                         <div class="card-body">
+                             <img class="card-img-top img-fluid rounded-circle" src="img/staff-photo1.jpg">
+                            <h5 class="card-title">Stephen McKeinleigh</h5>
+                            <p class="card-text">Student Advisor</p>
+                          </div>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="card">
+                         <div class="card-body">
+                             <img class="card-img-top img-fluid rounded-circle" src="img/staff-photo2.jpg">
+                            <h5 class="card-title">Samantha Freed</h5>
+                            <p class="card-text">Student Advice Coordinator</p>
+                          </div>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="card">
+                         <div class="card-body">
+                             <img class="card-img-top img-fluid rounded-circle" src="img/staff-photo3.jpg">
+                            <h5 class="card-title">Tomas Hay</h5>
+                            <p class="card-text">Careers Advisor</p>
+                          </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+   
+    <div class="jumbotron jumbotron-fluid jumbotron-bottom">
+         <div class="container">
+            <h1>Ready When You Are</h1>
+            <h4>Schedule your appointment online!</h4>
+             <a class="btn btn-success" data-toggle="modal" href="#logInModal">Book Now</a>
+            <a class="btn btn-success" href="index.php#services-section">Back to Services</a>
+         </div>
+    </div>
+    <!--Footer-->
+    <footer>
+         <p>© 2019 Discovery University Dundee</p>
+    </footer>
+</body>
+</html>

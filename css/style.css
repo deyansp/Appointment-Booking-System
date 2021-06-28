@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700|Play:700|Oswald');
+
+html {
+    scroll-behavior: smooth;
+}
+html, body {
+    height:100%;
+    width:100%;
+}
+.nav-link:hover {
+    text-decoration: underline;
+    transition: 0.3s;
+}
+.navbar {
+    background-color: #0096e1;
+    color: white;
+}
+.nav-link {
+    font-family:'Oswald', sans-serif;
+    font-size: 1.2rem !important;
+    color: white !important;
+}
+.modal-link {
+    color: #373737 !important;
+    text-shadow: 1px 1px 1px #fff !important;
+}
+.navbar-brand {
+    font-family: 'Play', cursive;
+    font-size: 1.4em !important;
+    color: #fff !important;
+}
+
+#logo {
+    width: 40px;
+    height: 40px;
+}
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+.navbar-light .navbar-toggler {
+    background-color: #fff8;
+}
+
+p {
+    font-family: 'Lato:400', sans-serif;
+}
+.carousel-inner img {
+    width: 100%;
+    max-height: 600px;
+    display: block;
+    object-fit: cover;
+}
+
+.carousel-caption h1 {
+    font-size:500%;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 15px black;
+    
+}
+.carousel-caption h3 {
+    font-size: 450%;
+    font-weight:500;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 10px black;
+    font-family: 'Oswald', 'SegoeUI';
+    text-align: left;
+}
+
+.carousel-caption h5 {
+    text-shadow: 1px 1px 10px black;
+    font-family: 'Lato', 'SegoeUI';
+    text-align: left;
+}
+.content-heading::before {
+    display: block;
+    content: "";
+    width: 6px;
+    height: 55px;
+    background-color: #0096e1;
+    position: absolute;
+    left: 0;
+    margin-top: 1rem;
+}
+
+.content-heading {
+    font-family: 'Oswald', cursive;
+    margin-top: 1rem;
+}
+
+#services-section {
+    background-color: white;
+    padding-bottom: 2rem;
+    animation-duration: 1s;
+    animation-name: slidein;
+}
+
+.card {
+    box-shadow: 0px 0px 10px lightgray;
+}
+
+@keyframes slidein {
+  from {
+    margin-top: 200%;
+  }
+
+  to {
+    margin-top: 0%;
+  }
+}
+
+.card-img-top {
+    margin-bottom: 1rem;
+    max-height: 190px;
+}
+
+.card-img-top :hover {
+    transform: scale(1.2);
+    transition: transform 0.2s;
+}
+
+.card-title {
+    color: black;
+    font-family: 'Oswald', sans-serif;
+}
+
+.card-text {
+    font-family: 'Lato', sans-serif;
+}
+
+.btn-success {
+    background-color: #ff7733;
+    border-color: #ff7733;
+    font-family: 'Lato';
+    font-weight: 700;
+}
+
+.btn-success :hover {
+    background-color: #ff661a !important;
+    border-color: #ff661a !important;
+}
+footer {
+    text-align: center !important;
+    background-color: #0096e1;
+    color: white;
+    padding-bottom: 1rem;
+}
+footer p {
+    padding-top: 1rem;
+}
+.row {
+    margin-left:0;
+    margin-right:0; 
+}
+
+/*---Media Queries --*/
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.8em !important;
+    }
+    
+    .overlay-a {
+        font-size: 2rem;
+    }
+    
+     .carousel-caption h3 {
+        font-size: 350%;
+        font-weight: 500;
+        text-transform: uppercase;
+        text-shadow: 1px 1px 10px black;
+    }
+    
+    .content-heading {
+        font-size: 2.8rem;
+    }
+    
+    .display-4 {
+        font-size: 2.8rem;
+        text-align:center;
+    }
+    
+    .content-heading::before {
+        display: none;
+    }
+    
+    .card-img-top {
+        max-height: none;
+    }
+}
+@media (max-width: 576px) {
+    .navbar-brand {
+        font-size: 1.2rem !important;
+    }
+    #logo {
+        width: 30px;
+        height: 30px;
+    }
+    .carousel-caption h3 {
+        font-size: 2rem;
+        padding-bottom: 0;
+    }
+    .carousel-caption h5 {
+        font-size: 1.2rem;
+    }
+    .overlay-a {
+    font-size: 1.6rem;
+    }
+    .content-heading {
+        font-size: 2.5rem;
+    }
+    
+    .display-4 {
+        font-size: 2.5rem;
+    }
+ }
+@media (max-width: 330px) {
+    .navbar-brand {
+        font-size: 1rem !important;
+    }
+    .carousel-caption h3 {
+        font-size: 1.5rem;
+    }
+    .carousel-caption h5 {
+        font-size: 1rem;
+    }
+}
+/*---Firefox Bug Fix --*/
+.carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+} 
+[class*="col-"] {
+    padding: 1rem;
+}
