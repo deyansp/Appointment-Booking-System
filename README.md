@@ -1,5 +1,5 @@
 # Overview
-[Website Link](https://mayar.abertay.ac.uk/~1704796/CMP206/service-info-page.html)
+[Website Link](https://mayar.abertay.ac.uk/~1704796/CMP206/)
 
 This web app was created as part of a university assignment where I was required to design and develop an appointment booking system for a fictional university.
 
